@@ -48,5 +48,4 @@ function draw() {
 
   stroke(0, 255, 0);
   line(volhistory.length, 0, volhistory.length, height);
-  //ellipse(100, 100, 200, vol * 200);
-}
+  }

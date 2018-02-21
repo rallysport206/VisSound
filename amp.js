@@ -5,7 +5,7 @@ var amp;
 function setup() {
   createCanvas(500, 500);
   soundFormats('mp3');
-  song = loadSound("dna.mp3", loaded);
+  song = loadSound("sober.mp3", loaded);
   amp = new p5.Amplitude();
   background(51);
 }
@@ -28,6 +28,8 @@ function draw() {
   ellipse(width / 2, height / 2, diam2, diam2);
   fill(255, 0, 255);
   ellipse(width / 8, height / 8, diam3, diam3);
+  fill(255, 0, 150);
+  ellipse(width / 2, height / 10, diam3, diam3);
 }
 
 
