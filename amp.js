@@ -19,9 +19,15 @@ function draw() {
   background(51);
 
   var vol = amp.getLevel();
-  var diam = map(vol, 0, 0.3, 30, 500);
+  var diam = map(vol, 0, 0.3, 30, 250);
+  var diam2 = map(vol, 0, 0.5, 30, 300);
+  var diam3 = map(vol, 0, 0.7, 30, 205);
   fill(255, 255, 0);
-  ellipse(width / 2, height / 2, diam, diam);
+  ellipse(width / 4, height / 4, diam, diam);
+  fill(255, 0, 0);
+  ellipse(width / 2, height / 2, diam2, diam2);
+  fill(255, 0, 255);
+  ellipse(width / 8, height / 8, diam3, diam3);
 }
 
 

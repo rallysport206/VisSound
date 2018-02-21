@@ -14,7 +14,7 @@ function toggleSong() {
 }
 
 function preload() {
-  song = loadSound('rtj.mp3');
+  song = loadSound('sober.mp3');
 }
 
 function setup() {
@@ -46,7 +46,7 @@ function draw() {
     volhistory.splice(0, 1);
   }
 
-  stroke(255, 0, 0);
+  stroke(0, 255, 0);
   line(volhistory.length, 0, volhistory.length, height);
   //ellipse(100, 100, 200, vol * 200);
 }
