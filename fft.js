@@ -14,7 +14,7 @@ function togglePlaying() {
 }
 
 function preload() {
-  song = loadSound('./track/sober.mp3');
+  song = loadSound('./track/rtj.mp3');
   button = createButton("play");
   button.mousePressed(togglePlaying);
 }
@@ -38,7 +38,7 @@ function draw() {
   for (var i = 0; i < spectrum.length; i++) {
     var angle = map(i, 0, spectrum.length, 0, 360);
     var amp = spectrum[i];
-    var r = map(amp, 0, 256, 40, 700);
+    var r = map(amp, 0, 256, 40, 500);
     //fill(i, 255, 255);
     var x = r * cos(angle);
     var y = r * sin(angle);
