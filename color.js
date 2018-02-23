@@ -1,10 +1,8 @@
 var song;
 var button;
 var amp;
-// var fr = 10;
 var barWidth = 20;
 var lastBar = -1;
-// var lastDiam2;
 
 
 function setup() {
@@ -32,7 +30,6 @@ function draw() {
     lastBar = whichBar;
   }
   var diam2 = map(vol, 0, 0.3, 10, 500);
-  // var diam2 = (map(vol, 0, 0.3, 10, 500) + lastDiam2) / 2;
   fill(random(250), random(255), random(255));
   ellipse(width / 2, height / 2, diam2, diam2);
 }
